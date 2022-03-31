@@ -17,7 +17,7 @@ traverse(ast, {
        }
     }
 })
-// 将最新的ast 转换为代码
+//  将最新的ast 转换为代码
 // ast2 -->> code2
 const result = generate(ast, {}, code)
 console.log(result.code)
