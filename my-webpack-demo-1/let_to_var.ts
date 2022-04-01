@@ -1,3 +1,16 @@
+// 先从babel说起
+// - babel的原理
+// 1. parse 把代码code变成ast
+// 2. traverse 遍历ast进行修改
+// 3. generate 把ast变成代码code2
+// 既 code =>> ast ==> ast2 ==> code2
+
+// 为什么要用ast
+// 你很难用正则表达式来替换 
+// 你需要识别每个单词的意思 才能做到只修改用于声明变量的let
+// 而ast可以明确的告诉你每个let的意思
+
+
 import { parse } from "@babel/parser"
 import traverse from "@babel/traverse"
 import generate from "@babel/generator"
