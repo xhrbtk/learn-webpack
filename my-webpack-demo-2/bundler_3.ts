@@ -17,7 +17,7 @@ const depRelation: DepRelation = [] // 数组！
 
 // 将入口文件的绝对路径传入函数，如 D:\demo\fixture_1\index.js
 collectCodeAndDeps(resolve(projectRoot, 'index.js'))
-
+console.log('derelateion', depRelation)
 writeFileSync('dist_2.js', generateCode())
 console.log('done')
 

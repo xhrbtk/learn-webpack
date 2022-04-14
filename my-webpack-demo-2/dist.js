@@ -89,5 +89,6 @@ function execute(key) {
   // 第二个参数 module 大部分时候是无用的，主要用于兼容旧代码
   item.code(require, module, module.exports)
   // 返回当前模块
+  console.log('item.code', modules)
   return modules[key]
 }
